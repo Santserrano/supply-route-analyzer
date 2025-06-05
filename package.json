@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "python panda/engine/run.py"
+  },
+  "dependencies": {
+    "e": "^0.2.33"
+  }
+}
