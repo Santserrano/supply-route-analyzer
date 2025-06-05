@@ -1,1 +1,1 @@
-from .auth import login_required, current_user, role_required, auth_protect
+from .auth import login_required, current_user, role_required

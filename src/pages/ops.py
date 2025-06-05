@@ -5,7 +5,6 @@ import customtkinter as ctk
 
 class Page(PandaPage):
     @role_required("admin", "editor")
-    @auth_protect("admin", "editor")
     
     def setup(self):
         # Configurar colores
