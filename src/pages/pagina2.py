@@ -1,8 +1,8 @@
 from panda.ui import PandaPage
-from panda.auth import role_required, current_user
+from panda.auth import login_required, current_user
 
 class Page(PandaPage):
-    @role_required("admin", "editor")
+    @login_required
     
     def setup(self):
         self.label(f"Hola, {current_user().username}")

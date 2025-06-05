@@ -8,6 +8,12 @@ _current_user = None
 def current_user():
     return _current_user
 
+def auth_protect(role):
+    if current_user() != role:
+        return 0
+    else:
+        return 1
+
 def login_required(func):
     @wraps(func)
     def wrapper(self, *args, **kwargs):
