@@ -6,8 +6,8 @@ generate_sqlite_schema('schema.panda', 'app.db')
 seed_users('app.db')
 
 ROLE_TO_PAGE = {
-    'admin': 'ops',
-    'editor': 'ops',
+    'admin': 'pagina2',
+    'editor': 'pagina2',
     'viewer': 'pagina2',
 }
 
